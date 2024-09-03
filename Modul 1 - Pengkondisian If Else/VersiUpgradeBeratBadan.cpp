@@ -43,5 +43,6 @@ int main(){
     cout << "=====================================\n"; 
     cin.ignore(1000, '\n'); // Ini berfungsi untuk menghapus buffer atau inputan yang delay
     } while (ulang == 'y' || ulang == 'Y'); //disini untung mengulang program
-    return 0;                               //ketika while bersifat true atau bernilai Y
+    cin.get();                              //ketika while bersifat true atau bernilai Y
+    return 0; 
 }
