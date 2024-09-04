@@ -44,7 +44,7 @@ int main(){
     cout << "\nApakah anda ingin menghitung ulang? \nPilih 'Y' atau 'N' : ";cin >> ulang;
     cout << "=====================================\n"; 
     cin.ignore(1000, '\n'); // Ini berfungsi untuk menghapus buffer atau inputan yang delay
-    } while (ulang == 'y' || ulang == 'Y'); //disini untung mengulang program
-    cin.get();                              //ketika while bersifat true atau bernilai Y
+    } while (ulang == 'y' || ulang == 'Y'); //disini untung mengulang program ketika while bersifat true atau bernilai Y
+    cin.get();                              
     return 0; 
 }
