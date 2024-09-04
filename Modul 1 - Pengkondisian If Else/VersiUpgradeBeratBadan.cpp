@@ -5,21 +5,23 @@ int main(){
     float BMI,berat,tinggi,tinggi2;
     char ulang;
     do {
+    while(true){
     cout << "Masukkan tinggi badan (cm) : ";cin >> tinggi;
     // untuk memeriksa input valid
     if(cin.fail()){
         cin.clear();
         cin.ignore(1000, '\n');
-        cout << "Input tidak valid, Masukkan angka.\n";
-        continue;
-    }
+        cout << "\nInput tidak valid, Masukkan angka.\n";
+    }else{
+        break;
+    }}
 
     while(true){ // Untuk memeriksa input valid atau tidak
     cout << "Masukkan berat badan (kg) : ";cin >> berat;
     if(cin.fail()){
         cin.clear();
         cin.ignore(1000, '\n');
-        cout << "Input tidak valid, Masukkan angka.\n";
+        cout << "\nInput tidak valid, Masukkan angka.\n";
     }else{
         break;
     }
